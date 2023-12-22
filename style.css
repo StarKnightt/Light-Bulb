@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -27,7 +28,7 @@ body {
     left: 0;
     width: 80px;
     height: 80px;
-    transform-origin:250px;
+    transform-origin: 250px;
     transform: rotate(calc(60deg * var(--i)));
 }
 
@@ -37,7 +38,7 @@ body {
     top: 3px;
     font-size: 2em;
     text-decoration: underline;
-    text-decoration-style: wavy ;
+    text-decoration-style: wavy;
 }
 
 .bulb {
@@ -52,11 +53,11 @@ body {
 
 .on .bulb {
     box-shadow: 0 0 50px #fff,
-    0 0 100px #fff,
-    0 0 150px #fff,
-    0 0 200px #fff,
-    0 0 300px #fff,
-    0 0 350px #fff;
+        0 0 100px #fff,
+        0 0 150px #fff,
+        0 0 200px #fff,
+        0 0 300px #fff,
+        0 0 350px #fff;
 }
 
 .bulb::before {
@@ -77,7 +78,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 120px;
     height: 120px;
     background: #fff;
@@ -91,15 +92,15 @@ body {
 }
 
 .bulb span:nth-child(1) {
-   position: absolute;
-   top: -16px;
-   left: -4px;
-   width: 30px;
-   height: 30px;
-   background:transparent;
-   border-bottom-right-radius: 40px;
-   transform: rotate(342deg);
-   box-shadow: 20px 20px 0 10px #444;
+    position: absolute;
+    top: -16px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-right-radius: 40px;
+    transform: rotate(342deg);
+    box-shadow: 20px 20px 0 10px #444;
 }
 
 .bulb span:nth-child(2) {
@@ -108,11 +109,11 @@ body {
     right: -4px;
     width: 30px;
     height: 30px;
-    background:transparent;
+    background: transparent;
     border-bottom-left-radius: 40px;
     transform: rotate(16.5deg);
     box-shadow: -20px 20px 0 10px #444;
- }
+}
 
 .on .bulb span:nth-child(1) {
     box-shadow: 20px 20px 0 10px #fff;
@@ -127,7 +128,7 @@ body {
     width: 80px;
     height: 80px;
     border: 3px solid #000;
-    background-image: linear-gradient(#eee,#ccc,#eee);
+    background-image: linear-gradient(#eee, #ccc, #eee);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -138,7 +139,7 @@ body {
     position: relative;
     width: 25px;
     height: 40px;
-    background: linear-gradient(#777,#fff,#777);
+    background: linear-gradient(#777, #fff, #777);
     border-radius: 6px;
     border: 2px solid #000;
     cursor: pointer;
@@ -151,7 +152,7 @@ body {
     left: 0;
     width: 100%;
     height: 85%;
-    background: linear-gradient(#ddd,#fff);
+    background: linear-gradient(#ddd, #fff);
     border-radius: 4px;
 }
 
@@ -159,21 +160,9 @@ body {
     top: 15%;
 
 }
+
 #audio {
     display: none;
 }
 
-/* ... (your existing styles) ... */
 
-@media only screen and (max-device-width: 600px) {
-    .switch {
-        width: 20%; /* Adjusted for smaller screens */
-        height: 23%; /* Adjusted for smaller screens */
-    }
-
-    .switch .btn {
-        width: 25px; 
-        height: 40px; 
-        position: fixed;
-    }
-}
