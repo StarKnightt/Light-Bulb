@@ -1,6 +1,6 @@
 # Light Bulb Animation
 
-![Light Bulb Animation](screenshot.png)
+![Light Bulb Animation](screenshot.gif)
 
 A creative and interactive light bulb animation with a switch, built using HTML, CSS, and JavaScript.
 
